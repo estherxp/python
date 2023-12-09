@@ -30,7 +30,9 @@ sns.pairplot(gorjeta, hue = 'sex')
 sns.barplot(x = 'sex', y = 'total_bill', data=gorjeta)
 sns.barplot(x = 'sex', y = 'total_bill', data=gorjeta, estimator=np.std)
 
+# fazer verificação da gorjeta, do data set, para verificar se é null, se tem gorjeta de valor correspondente a zero
+print(gorjeta[gorjeta['tip'] == 0])
+
 # exibir o grafico
 plt.show()
-
 
